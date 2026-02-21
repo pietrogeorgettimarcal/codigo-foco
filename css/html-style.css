@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: rgb(36, 15, 1);
+    --cor2: rgb(65, 45, 31);
+    --cor3: rgb(28, 28, 66);
+    --cor4: rgb(0, 110, 255);
+    --cor5: rgb(30, 30, 56);
+    --cor6: gray;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--cor1);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--cor2);
+}
+
+header .name {
+    display: flex;
+    align-items: center;
+}
