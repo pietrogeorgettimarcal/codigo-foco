@@ -21,7 +21,8 @@ body {
     background-color: var(--cor1);
 }
 
-header {
+/* Alterado para focar apenas no cabeçalho do topo da página */
+body > header {
     display: flex;
     flex-flow: row wrap;
     align-items: center;

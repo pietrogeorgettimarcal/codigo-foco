@@ -21,27 +21,31 @@
             </nav>
     </header>
     <main>
-        <div class="hero-title">
-            <h1>Flexible Box (Flexbox)</h1>
-        </div>
-        <div class="hero-text">
-            <p>Um guia completo sobre as propriedades do layout Flexbox no CSS<p>
-        </div>
-        <section>
-            <div class="section-title">
-                <h2>Flex-direction</h2>
+        <header>
+            <div class="hero-title">
+                <h1>Flexible Box (Flexbox)</h1>
             </div>
+            <div class="hero-text">
+                <p>Um guia completo sobre as propriedades do layout Flexbox no CSS</p>
+            </div>
+        </header>
+
+        <section id="flex-direction">
+            <header class="section-title">
+                <h2>Flex-direction</h2>
+            </header>
             <div class="content">
                 <p><strong>flex-direction</strong> é um contêiner flexível, que define a direção e formato de um elemento ou conteúdo em torno do eixo principal e eixo transversal.</p> <br>
                 <p>Chamamos o eixo principal de <strong>main-axis</strong> e o eixo transversal de <strong>cross-axis</strong>.</p>
             </div>
 
-                <img src="../assets/imagens/eixos(axis).png" alt="">
+            <img src="../assets/imagens/eixos(axis).png" alt="">
+            
             <div class="sub-content">
                 <p>Para flex-direction seu valor padrão é <strong>flex-direction: row</strong>, definido sua direção para linha, de acordo com o eixo <strong>main-axis</strong>.</p>
             </div>
             
-<div class="code">
+<figure class="code">
 <pre>
 <code>
     .container {
@@ -49,11 +53,11 @@
     }
 </code>
 </pre>
-</div>
+</figure>
             <div class="sub-content">
                 <p>Além da direção em linha, também existe a direção em coluna, definido pelo valor <strong>flex-direction: column</strong>, de acordo com o eixo <strong>cross-axis</strong> ou eixo transversal.</p>
             </div>
-<div class="code">
+<figure class="code">
 <pre>
 <code>
     .container {
@@ -61,12 +65,12 @@
     }
 </code>
 </pre>      
-</div>
+</figure>
 
             <div class="sub-content">
                 <p>Diferente do valor row, <strong>flex-direction: row-reverse</strong> tem seu valor invertido, começando a linha da direita para a esquerda.</p>
             </div>
-<div class="code">    
+<figure class="code">    
 <pre>
 <code>
     .container {
@@ -74,11 +78,11 @@
     }
 </code>    
 </pre>
-</div>
+</figure>
             <div class="sub-content">
                 <p>Diferente do valor column, <strong>flex-direction: column-reverse</strong> tem seu valor invertido, começando a coluna de baixo para cima.</p>
             </div>
-<div class="code">
+<figure class="code">
 <pre>
 <code>
     .container {
@@ -86,13 +90,13 @@
     }
 </code>    
 </pre>
-</div>
+</figure>
         </section>
-        <section>
-            <div class="section-title">
-                <h2>Flex-wrap</h2>
-            </div>
 
+        <section id="flex-wrap">
+            <header class="section-title">
+                <h2>Flex-wrap</h2>
+            </header>
             
             <div class="content">
                 <p>Em CSS <strong>flex-wrap</strong> é um contêiner flexível, definido se será forçado a ficar na mesma linha ou se irá quebrar em várias linhas, dependendo da quantidade de espaço disponível pelo elemento ou conteúdo.</p>
@@ -100,7 +104,7 @@
             <div class="sub-content">
                 <p>flex-wrap têm por padrão o valor <strong>flex-wrap: nowrap</strong>, seu valor é definido para que o elemento ou conteúdo seja forçado a ficar na mesma linha.</p>
             </div>
-<div class="code">
+<figure class="code">
 <pre>
 <code>
     .container {
@@ -108,11 +112,11 @@
     }
 </code>
 </pre>
-</div>
+</figure>
             <div class="sub-content">
                 <p><strong>flex-wrap: wrap</strong> têm por valor definido, para quando o elemento ou conteúdo não tenha espaço suficiente para crescer mais, será forçado a quebrar em várias linhas.</p>
             </div>
-<div class="code">
+<figure class="code">
 <pre>
 <code>
     .container {
@@ -120,11 +124,11 @@
     }
 </code>
 </pre>
-</div>
+</figure>
             <div class="sub-content">
                 <p><strong>flex-wrap: wrap-reverse</strong> ao invés de quebrar em várias linhas de cima para baixo como o padrão, será forçado a quebrar de baixo para cima.</p>
             </div>
-<div class="code">
+<figure class="code">
 <pre>
 <code>
     .container {
@@ -132,16 +136,17 @@
     }
 </code>
 </pre>
-</div>
+</figure>
         </section>
-        <section>
-            <div class="section-title">
+
+        <section id="flex-flow">
+            <header class="section-title">
                 <h2>Flex-flow</h2>
-            </div>
+            </header>
             <div class="content">
                 <p>Flex-flow é a junção de <strong>flex-direction</strong> com <strong>flex-wrap</strong>, ao invés de fazer duas declarações flex-derection: row; e flex-wrap: nowrap; simplificando com apenas uma declaração <strong>flex-flow: row nowrap;</strong></p>
             </div>
-<div class="code">
+<figure class="code">
 <pre>
 <code>
     .container {
@@ -154,8 +159,8 @@
     }
 </code>    
 </pre>
-</div>
-<div class="code">
+</figure>
+<figure class="code">
 <pre>
 <code>
     .container {
@@ -168,12 +173,13 @@
     }
 </code>
 </pre>
-</div>
+</figure>
         </section>
-        <section>
-            <div class="section-title">
+
+        <section id="justify-content">
+            <header class="section-title">
                 <h2>Justify Content</h2>
-            </div>
+            </header>
             <h3>Center</h3>
             <div class="content">
                 <p>Centraliza os itens na horizontal.</p>
@@ -187,10 +193,11 @@
                 <p>Diferente do space-between, o space-evenly não cola o primeiro e o último item no começo e final do eixo, apenas calcula o espaço entre eles automaticamente.</p>
             </div>
         </section>
-        <section>
-            <div class="section-title">
+
+        <section id="align-content">
+            <header class="section-title">
                 <h2>Align-content</h2>
-            </div>
+            </header>
             <div class="content">
                 <p>Alinha os elemntos no eixo transversal, somente quando estão empacotados. Os valores aceitos são:</p>
             </div>
@@ -223,19 +230,21 @@
                 <p>align-content: space-around; dividirá o cross-axis em partes, sendo a primeira e a última metade dos espaços entres elementos e colocará os elementos centralizados.</p>
             </div>
         </section>
-        <section>
-            <div class="section-title">
+
+        <section id="order">
+            <header class="section-title">
                 <h2>Order</h2>
-            </div>
+            </header>
             <div class="content">
                 <p>Todo item em flexbox tem por padrão order: 0.</p>
                 <p>Caso a order tiver valores difentes de 0, o css formatará os itens em ordem crescente de acordo com seus valores.</p>
             </div>
         </section>
-        <section>
-            <div class="section-title">
+
+        <section id="align-self">
+            <header class="section-title">
                 <h2>Align-self</h2>
-            </div>
+            </header>
             <div class="content">
                 <p>Aplicado a cada um dos itens dentro do flexbox de acordo com o alinhamento de cada item no eixo transversal. Os alinhamentos são: </p>
             </div>
@@ -260,17 +269,18 @@
                 <p>Alinhamento ocupando todo o espaço dividindo a área disponível, linhas ou colunas, em partes iguais e irá esticar os elementos do tamanho do cross-axis ou main-axis.</p>
             </div>
         </section>
-        <section>
-            <div class="section-title">
+
+        <section id="flex-basis">
+            <header class="section-title">
                 <h2>Flex-basis</h2>
-            </div>
+            </header>
             <div class="content">
                 <p><strong>Flex-basis</strong> é um parâmetro para alinhamento de itens e não de contêiners, e têm os seguintes alinhamentos: </p>
             </div>
             <div class="sub-content">
                 <p>Em CSS flex-basis tem por padrão, valor auto. Significa que o tamanho do elemento no eixo principal, altura ou largura, é ditada pelo tamanho de seu conteúdo.</p>
             </div>
-<div class="code">
+<figure class="code">
 <pre>
 <code>
     .item {
@@ -278,12 +288,12 @@
     }
 </code>    
 </pre>
-</div>
+</figure>
             <div class="content">
                 <p>Definindo um valor para <strong>flex-basis</strong> em px, cada elemento terá seu tamanho definido de acordo com o valor, independente do tamanho do conteúdo, porém o tamanho em px, ficará alinhado enquanto o contêiner conseguir suportar.</p> <br>
                 <p>Ou seja, se o contêiner tiver 300px, tiver 3 elementos e cada elemento tiver 150px, cada elemento dentro desse contêiner terá seu tamanho alinhado de acordo com o espaço suportado, ou seja, diminuirá para 100px cada um.</p>
             </div>
-<div class="code">
+<figure class="code">
     <pre>
     <code>
         .item {
@@ -291,7 +301,7 @@
         }
     </code>
     </pre>
-</div>
+</figure>
             <h3>Flex-grow</h3>
             <div class="content">
                 <p>Flex-grow tem por padrão o valor 0. Definindo o quanto esse elemento aumentará em tamanho.</p>
@@ -301,10 +311,11 @@
                 <p>Flex-shrink tem por padrão o valor 1. Definindo o quanto esse elemento diminuirá em tamanho.</p>
             </div>
         </section>
-        <section>
-            <div class="section-title">
+
+        <section id="propriedade-flex">
+            <header class="section-title">
                 <h2>Propriedade Flex</h2>
-            </div>
+            </header>
             <div class="content">
                 <p>A propriedade "flex" é a junção de flex-basis, flex-grow e flex-shrink em um único comando, definido os valores sempre na seguinte ordem: flex-grow, flex-shrink e flex-basis.</p>
             </div>

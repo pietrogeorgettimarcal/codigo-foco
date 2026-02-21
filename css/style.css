@@ -21,7 +21,8 @@ body {
     background-color: var(--cor1);
 }
 
-header {
+/* Alterado para focar apenas no cabeçalho do topo da página */
+body > header {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -33,7 +34,8 @@ header {
     box-shadow: 2px 2px 0px var(--cor4);
 }
 
-header .name {
+/* Alterado para focar apenas no logo e título do topo */
+body > header .name {
     display: flex;
     align-items: center;
 }
