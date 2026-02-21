@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: rgb(0, 0, 19);
+    --cor2: rgb(25, 25, 49);
+    --cor3: rgb(28, 28, 66);
+    --cor4: rgb(0, 110, 255);
+    --cor5: rgb(30, 30, 56);
+    --cor6: gray;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+    background-color: var(--cor1);
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 20px;
+    background-color: var(--cor2);
+    color: white;
+    box-shadow: 2px 2px 0px var(--cor4);
+}
+
+header .name {
+    display: flex;
+    align-items: center;
+}
+
+.navigation a {
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--cor6);
+    transition: .5s;
+}
+
+.navigation a:hover {
+    color: var(--cor4);
+    background-color: var(--cor3);
+}
+
+main {
+    flex: 1;
+
+    margin: 40px auto;
+    padding: 20px;
+    width: 90vw;
+    max-width: 900px;
+}
+
+.hero-title {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--cor4);
+}
+
+.hero-text {
+    margin-bottom: 40px;
+    text-align: center;
+    color: var(--cor6);
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: var(--cor2);
+    border-radius: 10px;
+}
+
+.section-title {
+    padding: 10px 0px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--cor4);
+    color: var(--cor4);
+}
+
+section img {
+    width: 820px;
+    height: 500px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+section h3 {
+    padding: 20px 10px;
+    color: white;
+}
+
+.code { 
+    color: var(--cor6);
+    background-color: var(--cor1);
+    margin: 20px 0px;
+    border-radius: 10px;
+}
+
+.code strong {
+    color: var(--cor4);
+}
+
+.content {
+    text-align: justify;
+    color: white;
+    padding: 20px 0;
+    border-radius: 5px;
+}
+
+.sub-content {
+    text-align: justify;
+    background-color: var(--cor5);
+    color: white;
+    padding: 20px;
+    box-shadow: -3px 0px 0px var(--cor4);
+}
+
+.content strong {
+    padding: 3px;
+    font-family: monospace;
+    background-color: var(--cor1);
+    color: var(--cor4);
+    border-radius: 5px;
+}
+
+.sub-content strong {
+    padding: 3px;
+    font-family: monospace;
+    background-color: var(--cor1);
+    color: var(--cor4);
+    border-radius: 5px;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--cor2);
+    color: white;
+}
