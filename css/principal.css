@@ -28,7 +28,7 @@ body > header {
     align-items: center;
     justify-content: space-around;
 
-    padding: 20px;
+    padding: 10px;
     background-color: var(--cor2);
     color: white;
     box-shadow: 2px 2px 0px var(--cor4);

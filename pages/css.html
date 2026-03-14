@@ -180,14 +180,36 @@
             <header class="section-title">
                 <h2>Justify Content</h2>
             </header>
-            <h3>Center</h3>
             <div class="content">
-                <p>Centraliza os itens na horizontal.</p>
+                <p>Uma propriedade CSS usada em layouts <strong>Flexbox</strong> e <strong>Grid</strong> para alinhar itens ao longo do eixo principal (horizontalmente por padrão) e distribuir espaço extra entre eles.</p>
             </div>
-            <h3>Space-between</h3>
             <div class="content">
-                <p>Cola o primeiro item no começo do eixo e o último item no final do eixo e calcula o espaço entre eles automaticamente.</p>
+                <p>Os valores tem as seguintes especificações:</p>
             </div>
+            <div class="sub-content">
+                <p>Para <strong>flex-start</strong>, os itens serão empacotados na parte inicial do container, dependendo do eixo principal.</p>
+            </div>
+<figure class="code">
+<pre>
+    <code>
+        .container {
+            justify-content: <strong>flex-start;</strong>
+        }
+    </code>
+</pre>    
+</figure>
+            <div class="sub-content">
+                <p><strong>justify-content: space-between</strong> cola o primeiro item no começo do eixo e o último item no final do eixo e calcula o espaço entre eles automaticamente.</p>
+            </div>
+<figure class="code">
+    <pre>
+        <code>
+            .container {
+                justify-content: <strong>space-between;</strong>
+            }
+        </code>
+    </pre>
+</figure>           
             <h3>Space-evenly</h3>
             <div class="content">
                 <p>Diferente do space-between, o space-evenly não cola o primeiro e o último item no começo e final do eixo, apenas calcula o espaço entre eles automaticamente.</p>
